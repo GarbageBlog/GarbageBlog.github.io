@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://GarbageBlog.github.io</id>
     <title>Garbage的小窝</title>
-    <updated>2020-02-08T08:25:24.787Z</updated>
+    <updated>2020-02-08T09:50:17.628Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://GarbageBlog.github.io"/>
     <link rel="self" href="https://GarbageBlog.github.io/atom.xml"/>
@@ -17,6 +17,7 @@
         </link>
         <updated>2020-02-08T07:32:19.000Z</updated>
         <content type="html"><![CDATA[<p><s>居然是第三个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="green"><mtext>AC</mtext></mstyle></mrow><annotation encoding="application/x-tex">\color{green}\text{AC}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text" style="color:green;"><span class="mord" style="color:green;">AC</span></span></span></span></span>的人</s></p>
+<p><strong>本文纯找规律，想要数学证明请勿进入</strong></p>
 <h1 id="题目分析">题目分析</h1>
 <p>首先题目重点是这句话：</p>
 <blockquote>
@@ -65,6 +66,9 @@
 <blockquote>
 <p>前 n 个数是1，2，…，n。后 n 个数可以是（小于 n 的所有偶数+小于 n 的所有奇数）或（小于 n 的所有奇数+小于 n 的所有偶数）。所有奇偶数均按从小到大排列。</p>
 </blockquote>
+<h1 id="分块">分块</h1>
+<p>分块就是再DFS可以接受的范围搜索，出了这个范围就用别的方法，例如上面的规律。</p>
+<p>这是考场上常用的技巧，可以保证自己再拿到暴力分的基础上可能有更高的分。</p>
 <h1 id="总结">总结</h1>
 <p><strong>数学不好不要慌，暴力规律出奇迹！</strong></p>
 ]]></content>

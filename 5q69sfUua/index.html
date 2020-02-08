@@ -7,7 +7,7 @@
 <meta name="description" content="Garbage基于Github于Gridea搭建的小站,欢迎大家!">
 <meta name="theme-color" content="#000">
 <title>P5823 【L&amp;K R-03】课表的排列 题解 | Garbage的小窝</title>
-<link rel="shortcut icon" href="https://GarbageBlog.github.io/favicon.ico?v=1581150320873">
+<link rel="shortcut icon" href="https://GarbageBlog.github.io/favicon.ico?v=1581155410517">
 <link rel="stylesheet" href="https://GarbageBlog.github.io/styles/main.css">
 
 <link rel="stylesheet" href="/media/css/pisces.css">
@@ -213,6 +213,7 @@
 <li><a href="#%E8%A7%84%E5%BE%8B%E6%8E%A8%E5%B9%BF">规律推广</a></li>
 </ul>
 </li>
+<li><a href="#%E5%88%86%E5%9D%97">分块</a></li>
 <li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
 </ul>
 
@@ -483,13 +484,14 @@ window.addEventListener('load', function() {
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>608<span class="pc-show">字数</span></span>
+      <span>693<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
 </div>
               <div class="post-body next-md-body" id="post_body">
                 <p><s>居然是第三个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="green"><mtext>AC</mtext></mstyle></mrow><annotation encoding="application/x-tex">\color{green}\text{AC}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text" style="color:green;"><span class="mord" style="color:green;">AC</span></span></span></span></span>的人</s></p>
+<p><strong>本文纯找规律，想要数学证明请勿进入</strong></p>
 <h1 id="题目分析">题目分析</h1>
 <p>首先题目重点是这句话：</p>
 <blockquote>
@@ -538,6 +540,9 @@ window.addEventListener('load', function() {
 <blockquote>
 <p>前 n 个数是1，2，…，n。后 n 个数可以是（小于 n 的所有偶数+小于 n 的所有奇数）或（小于 n 的所有奇数+小于 n 的所有偶数）。所有奇偶数均按从小到大排列。</p>
 </blockquote>
+<h1 id="分块">分块</h1>
+<p>分块就是再DFS可以接受的范围搜索，出了这个范围就用别的方法，例如上面的规律。</p>
+<p>这是考场上常用的技巧，可以保证自己再拿到暴力分的基础上可能有更高的分。</p>
 <h1 id="总结">总结</h1>
 <p><strong>数学不好不要慌，暴力规律出奇迹！</strong></p>
 

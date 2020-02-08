@@ -6,7 +6,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="Garbage基于Github于Gridea搭建的小站,欢迎大家!">
 <meta name="theme-color" content="#000">
-<title>关于 | Garbage的小窝</title>
+<title>P5823 【L&amp;K R-03】课表的排列 题解 | Garbage的小窝</title>
 <link rel="shortcut icon" href="https://GarbageBlog.github.io/favicon.ico?v=1581150320873">
 <link rel="stylesheet" href="https://GarbageBlog.github.io/styles/main.css">
 
@@ -25,7 +25,7 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 
-    <meta name="description" content="关于" />
+    <meta name="description" content="P5823 【L&K R-03】课表的排列 题解" />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -205,8 +205,15 @@
             <div class="toc-box right-motion">
   <div class="toc-wrapper auto-number compress" id="toc_wrapper">
     <ul class="markdownIt-TOC">
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
+<li><a href="#%E9%A2%98%E7%9B%AE%E5%88%86%E6%9E%90">题目分析</a></li>
+<li><a href="#%E8%A7%A3%E5%86%B3%E9%A2%98%E7%9B%AE">解决题目</a>
+<ul>
+<li><a href="#dfs">DFS</a></li>
+<li><a href="#%E8%A7%84%E5%BE%8B">规律？</a></li>
+<li><a href="#%E8%A7%84%E5%BE%8B%E6%8E%A8%E5%B9%BF">规律推广</a></li>
+</ul>
+</li>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
 </ul>
 
   </div>
@@ -457,8 +464,8 @@ window.addEventListener('load', function() {
               <div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://GarbageBlog.github.io/about">
-      关于
+    <a class="post-title-link" href="https://GarbageBlog.github.io/5q69sfUua">
+      P5823 【L&amp;K R-03】课表的排列 题解
     </a>
   </h1>
   <div class="post-meta">
@@ -466,33 +473,73 @@ window.addEventListener('load', function() {
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2019-01-25</span>
+      <span>2020-02-08</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
+      <span>3分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>51<span class="pc-show">字数</span></span>
+      <span>608<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
 </div>
               <div class="post-body next-md-body" id="post_body">
-                <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+                <p><s>居然是第三个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="green"><mtext>AC</mtext></mstyle></mrow><annotation encoding="application/x-tex">\color{green}\text{AC}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text" style="color:green;"><span class="mord" style="color:green;">AC</span></span></span></span></span>的人</s></p>
+<h1 id="题目分析">题目分析</h1>
+<p>首先题目重点是这句话：</p>
+<blockquote>
+<p>如果课表上一共有 n 个科目，每个科目都有且仅有两节课，小 L 想知道是否存在一个课表，满足这 n 科的两节课间隔的课程数从小到大排序后是一个公差为 1 的等差数列。</p>
 </blockquote>
-<h1 id="关于本站">🏠 关于本站</h1>
-<p>本站是基于Gridea建立的博客,博主还有网站:</p>
-<ol>
-<li><a href="https://cnblogs.com/Garbage-Only-One">CNBlogs</a></li>
-<li><a href="https://huaji-oj.123nat.com">Garbage Coding!</a></li>
-</ol>
-<h1 id="博主是谁">👨‍💻 博主是谁</h1>
-<p>全世界最垃圾的<strong>Garbage</strong></p>
+<p>换句话说，这句话意思是：</p>
+<blockquote>
+<p>如果给你 2n 个数，分别是 1，1，2，2，…，…，n，n 。对于任意小于等于 n 的数字 k ，将其两次出现的位置记做 i 、j 。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">S_k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>=</mo><mi>j</mi><mo>−</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">=j-i+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 。要求找到一种排列 2n 个数的方法使得将<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span></span></span></span>排序后是一个公差为 1 的等差数列。</p>
+</blockquote>
+<h1 id="解决题目">解决题目</h1>
+<h2 id="dfs">DFS</h2>
+<p>爆搜大家都会跟枚举全排列差不多，但是 n=100000x+1 这种数据爆搜是不行的，DFS期望得分 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>50</mn><mo>−</mo></mrow><annotation encoding="application/x-tex">50-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">5</span><span class="mord">0</span><span class="mord">−</span></span></span></span> ，错了别怪我，我没交。</p>
+<h2 id="规律">规律？</h2>
+<p>用DFS跑 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n=3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span> 之后输出所有结果，如果没错的话，应该有如下的两个可行解：</p>
+<pre><code>1 2 3 1 3 2
+1 2 3 2 1 3
+</code></pre>
+<p>—— 有什么规律吗？<br>
+—— 都是以<code>1 2 3</code>开头。<br>
+—— 还有吗？<br>
+—— 没了……<br>
+—— 把开头的<code>1 2 3</code>去掉，看后面的三个数！<br>
+—— 呃……<code>1 3</code>总是在一起，顺序也不变。</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">n=5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span><br>
+以<code>1 2 3 4 5</code>开头的可行结果：</p>
+<pre><code>1 2 3 4 5 1 3 5 2 4 
+1 2 3 4 5 1 4 2 5 3 
+1 2 3 4 5 2 1 5 4 3 
+1 2 3 4 5 2 4 1 3 5 
+1 2 3 4 5 3 1 4 2 5 
+1 2 3 4 5 3 2 1 5 4 
+</code></pre>
+<p>其中有</p>
+<pre><code>1 2 3 4 5 1 3 5 2 4 
+1 2 3 4 5 2 4 1 3 5 
+</code></pre>
+<p>满足之前推出来的规律。</p>
+<p>等等，为什么是 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">n=5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">5</span></span></span></span> 而非 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">n=4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">4</span></span></span></span> 呢？</p>
+<p>看题，题目中有</p>
+<blockquote>
+<p>输入仅一行，一个 <strong>奇数</strong> n，表示课表上的课程数。</p>
+</blockquote>
+<p>所以看题很重要！</p>
+<h2 id="规律推广">规律推广</h2>
+<p>用DFS可以跑出 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">n=7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">7</span></span></span></span> 与 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">n=9</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">9</span></span></span></span> 以及 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>=</mo><mn>11</mn></mrow><annotation encoding="application/x-tex">n=11</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">1</span></span></span></span> 可以发现如下规律：</p>
+<blockquote>
+<p>前 n 个数是1，2，…，n。后 n 个数可以是（小于 n 的所有偶数+小于 n 的所有奇数）或（小于 n 的所有奇数+小于 n 的所有偶数）。所有奇偶数均按从小到大排列。</p>
+</blockquote>
+<h1 id="总结">总结</h1>
+<p><strong>数学不好不要慌，暴力规律出奇迹！</strong></p>
 
               </div>
               <div class="post-footer">
@@ -503,7 +550,7 @@ window.addEventListener('load', function() {
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://GarbageBlog.github.io/about" title="关于">关于</a>
+      <a href="https://GarbageBlog.github.io/5q69sfUua" title="P5823 【L&amp;K R-03】课表的排列 题解">P5823 【L&amp;K R-03】课表的排列 题解</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -518,6 +565,10 @@ window.addEventListener('load', function() {
       
     </div>
     <div class="nav-next">
+      
+        <a class="nav-pc-next" title="Hello Gridea" href="https://GarbageBlog.github.io/hello-gridea">Hello Gridea</a>
+        <a class="nav-mobile-next" title="Hello Gridea" href="https://GarbageBlog.github.io/hello-gridea">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
       
     </div>
   </div>

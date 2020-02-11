@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://GarbageBlog.github.io</id>
     <title>Garbage的小窝</title>
-    <updated>2020-02-10T03:07:21.746Z</updated>
+    <updated>2020-02-11T02:04:42.276Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://GarbageBlog.github.io"/>
     <link rel="self" href="https://GarbageBlog.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://GarbageBlog.github.io/images/avatar.png</logo>
     <icon>https://GarbageBlog.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Garbage的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[Ubuntu镜像源下载]]></title>
+        <id>https://GarbageBlog.github.io/Ubuntu-Dowload</id>
+        <link href="https://GarbageBlog.github.io/Ubuntu-Dowload">
+        </link>
+        <updated>2020-02-11T02:03:30.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="几个国内源挺好的">几个国内源(挺好的)</h2>
+<ol>
+<li><a href="http://mirrors.ustc.edu.cn/">中科大镜像源  <strong><font color="FF0000">推荐!</font></strong></a></li>
+<li><a href="https://mirror.bjtu.edu.cn/">北大镜像源</a></li>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/">清华镜像源</a></li>
+<li><a href="http://mirrors.163.com/">网易开源镜像站</a></li>
+</ol>
+<p><strong>国内的够了,速度又快,没必要找国外的了。</strong></p>
+<h2 id="使用说明">使用说明</h2>
+<p>除了<strong>中科大</strong>,其他都要找找看一般找到<code>ubuntu-releases</code>点进去,再下载你要的版本。</p>
+<p><strong>中科大</strong>真是良心,帮你做了一个Ubuntu的获取器,在里头找到你想要的就行了。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Gridea 安装utterances评论系统]]></title>
         <id>https://GarbageBlog.github.io/utterances-help</id>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://GarbageBlog.github.io</id>
     <title>Garbage的小窝</title>
-    <updated>2020-03-03T08:58:07.566Z</updated>
+    <updated>2020-03-06T07:04:10.527Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://GarbageBlog.github.io"/>
     <link rel="self" href="https://GarbageBlog.github.io/atom.xml"/>
@@ -11,34 +11,11 @@
     <icon>https://GarbageBlog.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Garbage的小窝</rights>
     <entry>
-        <title type="html"><![CDATA[Ubuntu镜像源下载]]></title>
-        <id>https://GarbageBlog.github.io/Ubuntu-Dowload</id>
-        <link href="https://GarbageBlog.github.io/Ubuntu-Dowload">
-        </link>
-        <updated>2020-02-11T02:03:30.000Z</updated>
-        <summary type="html"><![CDATA[<p>都是国内的，挺好的。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>都是国内的，挺好的。</p>
-<!-- more -->
-<h2 id="几个国内源">几个国内源</h2>
-<ol>
-<li><a href="http://mirrors.ustc.edu.cn/">中科大镜像源  <strong><font color="FF0000">推荐!</font></strong></a></li>
-<li><a href="https://mirror.bjtu.edu.cn/">北大镜像源</a></li>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/">清华镜像源</a></li>
-<li><a href="http://mirrors.163.com/">网易开源镜像站</a></li>
-</ol>
-<p><strong>国内的够了,速度又快,没必要找国外的了。</strong></p>
-<h2 id="使用说明">使用说明</h2>
-<p>除了<strong>中科大</strong>,其他都要找找看一般找到<code>ubuntu-releases</code>点进去,再下载你要的版本。</p>
-<p><strong>中科大</strong>真是良心,帮你做了一个Ubuntu的获取器,在里头找到你想要的就行了。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[「置顶」Gridea 安装utterances评论系统]]></title>
+        <title type="html"><![CDATA[Gridea 安装utterances评论系统]]></title>
         <id>https://GarbageBlog.github.io/utterances-help</id>
         <link href="https://GarbageBlog.github.io/utterances-help">
         </link>
-        <updated>2020-02-09T10:12:14.000Z</updated>
+        <updated>2020-03-01T10:12:14.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="1-前言-utterances-是啥为什么选择它">1 前言—— <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi><mi>t</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">utterances</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">u</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">c</span><span class="mord mathdefault">e</span><span class="mord mathdefault">s</span></span></span></span> 是啥，为什么选择它</h1>
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi><mi>t</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">utterances</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">u</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">c</span><span class="mord mathdefault">e</span><span class="mord mathdefault">s</span></span></span></span> 也是像 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>i</mi><mi>t</mi><mi>a</mi><mi>l</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">Gitalk</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault" style="margin-right:0.03148em;">k</span></span></span></span> 一样基于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>G</mi><mi>i</mi><mi>t</mi><mi>h</mi><mi>u</mi><mi>b</mi><mtext> </mtext><mi>I</mi><mi>s</mi><mi>s</mi><mi>u</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">Github\text{ }Issues</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault">i</span><span class="mord mathdefault">t</span><span class="mord mathdefault">h</span><span class="mord mathdefault">u</span><span class="mord mathdefault">b</span><span class="mord text"><span class="mord"> </span></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault">s</span><span class="mord mathdefault">s</span><span class="mord mathdefault">u</span><span class="mord mathdefault">e</span><span class="mord mathdefault">s</span></span></span></span> 的评论系统基。</p>
 <p>效果图：<br>
@@ -101,6 +78,29 @@
 <li>评论框没生效？ ——1. 检查代码 2. 去2.1看看装了app没有 3. 检查网络 4. 等……</li>
 <li>其他问题请评论在下面……</li>
 </ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ubuntu镜像源下载]]></title>
+        <id>https://GarbageBlog.github.io/Ubuntu-Dowload</id>
+        <link href="https://GarbageBlog.github.io/Ubuntu-Dowload">
+        </link>
+        <updated>2020-02-11T02:03:30.000Z</updated>
+        <summary type="html"><![CDATA[<p>都是国内的，挺好的。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>都是国内的，挺好的。</p>
+<!-- more -->
+<h2 id="几个国内源">几个国内源</h2>
+<ol>
+<li><a href="http://mirrors.ustc.edu.cn/">中科大镜像源  <strong><font color="FF0000">推荐!</font></strong></a></li>
+<li><a href="https://mirror.bjtu.edu.cn/">北大镜像源</a></li>
+<li><a href="https://mirrors.tuna.tsinghua.edu.cn/">清华镜像源</a></li>
+<li><a href="http://mirrors.163.com/">网易开源镜像站</a></li>
+</ol>
+<p><strong>国内的够了,速度又快,没必要找国外的了。</strong></p>
+<h2 id="使用说明">使用说明</h2>
+<p>除了<strong>中科大</strong>,其他都要找找看一般找到<code>ubuntu-releases</code>点进去,再下载你要的版本。</p>
+<p><strong>中科大</strong>真是良心,帮你做了一个Ubuntu的获取器,在里头找到你想要的就行了。</p>
 ]]></content>
     </entry>
     <entry>

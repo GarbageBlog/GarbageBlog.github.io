@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://GarbageBlog.github.io</id>
     <title>Garbage的小窝</title>
-    <updated>2020-03-06T07:05:38.681Z</updated>
+    <updated>2020-09-19T08:43:23.924Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://GarbageBlog.github.io"/>
     <link rel="self" href="https://GarbageBlog.github.io/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2020, Garbage的小窝</rights>
     <entry>
         <title type="html"><![CDATA[Gridea 安装utterances评论系统]]></title>
-        <id>https://GarbageBlog.github.io/utterances-help</id>
-        <link href="https://GarbageBlog.github.io/utterances-help">
+        <id>https://GarbageBlog.github.io/utterances-help/</id>
+        <link href="https://GarbageBlog.github.io/utterances-help/">
         </link>
         <updated>2020-03-01T10:12:14.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="1-前言-utterances-是啥为什么选择它">1 前言—— <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi><mi>t</mi><mi>t</mi><mi>e</mi><mi>r</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">utterances</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">u</span><span class="mord mathdefault">t</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord mathdefault">c</span><span class="mord mathdefault">e</span><span class="mord mathdefault">s</span></span></span></span> 是啥，为什么选择它</h1>
@@ -82,8 +82,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Ubuntu镜像源下载]]></title>
-        <id>https://GarbageBlog.github.io/Ubuntu-Dowload</id>
-        <link href="https://GarbageBlog.github.io/Ubuntu-Dowload">
+        <id>https://GarbageBlog.github.io/Ubuntu-Dowload/</id>
+        <link href="https://GarbageBlog.github.io/Ubuntu-Dowload/">
         </link>
         <updated>2020-02-11T02:03:30.000Z</updated>
         <summary type="html"><![CDATA[<p>都是国内的，挺好的。</p>
@@ -105,8 +105,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[P5823 【L&K R-03】课表的排列 题解]]></title>
-        <id>https://GarbageBlog.github.io/lgP5823</id>
-        <link href="https://GarbageBlog.github.io/lgP5823">
+        <id>https://GarbageBlog.github.io/lgP5823/</id>
+        <link href="https://GarbageBlog.github.io/lgP5823/">
         </link>
         <updated>2020-02-08T07:32:19.000Z</updated>
         <summary type="html"><![CDATA[<p><s>居然是第三个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathcolor="green"><mtext>AC</mtext></mstyle></mrow><annotation encoding="application/x-tex">\color{green}\text{AC}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text" style="color:green;"><span class="mord" style="color:green;">AC</span></span></span></span></span>的人</s></p>
@@ -171,8 +171,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://GarbageBlog.github.io/hello-gridea</id>
-        <link href="https://GarbageBlog.github.io/hello-gridea">
+        <id>https://GarbageBlog.github.io/hello-gridea/</id>
+        <link href="https://GarbageBlog.github.io/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>

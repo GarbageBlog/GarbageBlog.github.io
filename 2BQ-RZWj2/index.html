@@ -6,7 +6,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="Garbage基于Github于Gridea搭建的小站,欢迎大家!">
 <meta name="theme-color" content="#000">
-<title>Ubuntu镜像源下载 | Garbage的小窝</title>
+<title>Ubuntu18.04 格式化U盘的正确方法 | Garbage的小窝</title>
 <link rel="shortcut icon" href="https://GarbageBlog.github.io/favicon.ico?v=1600508579831">
 <link rel="stylesheet" href="https://GarbageBlog.github.io/styles/main.css">
 
@@ -25,8 +25,8 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 
-    <meta name="description" content="Ubuntu镜像源下载" />
-    <meta name="keywords" content="系统,Ubuntu" />
+    <meta name="description" content="Ubuntu18.04 格式化U盘的正确方法" />
+    <meta name="keywords" content="笔记,总结" />
   </head>
   <body>
     <div class="head-top-line"></div>
@@ -213,12 +213,11 @@
             <div class="toc-box right-motion">
   <div class="toc-wrapper auto-number compress" id="toc_wrapper">
     <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E5%87%A0%E4%B8%AA%E5%9B%BD%E5%86%85%E6%BA%90">几个国内源</a></li>
-<li><a href="#%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E">使用说明</a></li>
-</ul>
-</li>
+<li><a href="#%E4%B8%80-%E5%86%8D%E6%AC%A1%E6%A0%BC%E5%BC%8F%E5%8C%96">一、再次格式化？</a></li>
+<li><a href="#%E4%BA%8C-%E7%BB%88%E7%AB%AF%E6%A0%BC%E5%BC%8F%E5%8C%96">二、终端格式化？</a></li>
+<li><a href="#%E4%B8%89-%E5%80%9F%E5%8A%A9-windows-%E6%A0%BC%E5%BC%8F%E5%8C%96">三、借助 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>o</mi><mi>w</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">Windows</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">d</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">s</span></span></span></span> 格式化？</a></li>
+<li><a href="#%E5%9B%9B-%E8%87%AA%E5%B7%B1%E6%8D%A3%E9%BC%93%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%B8%A6%E5%B7%A5%E5%85%B7">四、自己捣鼓系统自带工具？</a></li>
+<li><a href="#%E4%BA%94-%E6%81%A2%E5%A4%8D%E5%A6%82%E5%88%9D%E5%90%8E%E7%9A%84%E6%80%BB%E7%BB%93">五、恢复如初后的总结</a></li>
 </ul>
 
   </div>
@@ -469,8 +468,8 @@ window.addEventListener('load', function() {
               <div class="article-box">
     <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://GarbageBlog.github.io/Ubuntu-Dowload/">
-      Ubuntu镜像源下载
+    <a class="post-title-link" href="https://GarbageBlog.github.io/2BQ-RZWj2/">
+      Ubuntu18.04 格式化U盘的正确方法
     </a>
   </h1>
   <div class="post-meta">
@@ -478,7 +477,7 @@ window.addEventListener('load', function() {
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2020-02-11</span>
+      <span>2020-09-19</span>
     </span>
     
       <span class="meta-item">
@@ -487,14 +486,14 @@ window.addEventListener('load', function() {
         <span class="pc-show">分类于</span>
         
           
-            <a href="https://GarbageBlog.github.io/d2UcfGXHz/">
-              <span>系统</span>
+            <a href="https://GarbageBlog.github.io/SuGATntA4/">
+              <span>笔记</span>
             </a>、
           
         
           
-            <a href="https://GarbageBlog.github.io/Io05BbkLP7/">
-              <span>Ubuntu</span>
+            <a href="https://GarbageBlog.github.io/ZCI7T538SV/">
+              <span>总结</span>
             </a>
           
         
@@ -508,25 +507,36 @@ window.addEventListener('load', function() {
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>118<span class="pc-show">字数</span></span>
+      <span>274<span class="pc-show">字数</span></span>
     </span>
   </div>
 </header>
 </div>
               <div class="post-body next-md-body" id="post_body">
-                <p>都是国内的，挺好的。</p>
+                <p>今天在机房格式化U盘的时候中途拔掉了，U盘就再也读不出来了。</p>
 <!-- more -->
-<h2 id="几个国内源">几个国内源</h2>
-<ol>
-<li><a href="http://mirrors.ustc.edu.cn/">中科大镜像源  <strong><font color="FF0000">推荐!</font></strong></a></li>
-<li><a href="https://mirror.bjtu.edu.cn/">北大镜像源</a></li>
-<li><a href="https://mirrors.tuna.tsinghua.edu.cn/">清华镜像源</a></li>
-<li><a href="http://mirrors.163.com/">网易开源镜像站</a></li>
-</ol>
-<p><strong>国内的够了,速度又快,没必要找国外的了。</strong></p>
-<h2 id="使用说明">使用说明</h2>
-<p>除了<strong>中科大</strong>,其他都要找找看一般找到<code>ubuntu-releases</code>点进去,再下载你要的版本。</p>
-<p><strong>中科大</strong>真是良心,帮你做了一个Ubuntu的获取器,在里头找到你想要的就行了。</p>
+<h1 id="一-再次格式化">一、再次格式化？</h1>
+<p>本来想着再次格式化就完事了，结果系统根本就读不出来！</p>
+<figure data-type="image" tabindex="1"><img src="https://GarbageBlog.github.io/post-images/1600505812376.png" alt="" loading="lazy"></figure>
+<h1 id="二-终端格式化">二、终端格式化？</h1>
+<p>一开始，我通过<a href="https://www.jb51.net/os/Ubuntu/66912.html">网上教程</a>企图找到用命令行再次格式化U盘，结果一直显示空间过小，无法进行格式化，还要求尝试重启电脑。</p>
+<figure data-type="image" tabindex="2"><img src="https://GarbageBlog.github.io/post-images/1600506119063.png" alt="" loading="lazy"></figure>
+<p>重启，查U盘，格式化，无果……</p>
+<h1 id="三-借助-windows-格式化">三、借助 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>o</mi><mi>w</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">Windows</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">d</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">s</span></span></span></span> 格式化？</h1>
+<p>机房边上有几台 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>o</mi><mi>w</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">Windows</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">d</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">s</span></span></span></span> 的电脑，同学提醒我可以用 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>o</mi><mi>w</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">Windows</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">d</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">s</span></span></span></span> 去弄一弄。</p>
+<p>结果连<s>图形界面发达</s> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mi>i</mi><mi>n</mi><mi>d</mi><mi>o</mi><mi>w</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">Windows</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord mathdefault">i</span><span class="mord mathdefault">n</span><span class="mord mathdefault">d</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mord mathdefault">s</span></span></span></span> 都<strong>无法格式化！！！</strong></p>
+<p>图就不弄了……</p>
+<h1 id="四-自己捣鼓系统自带工具">四、自己捣鼓系统自带工具？</h1>
+<p>找啊找，找到了一个叫做<code>磁盘</code>的自带工具。</p>
+<figure data-type="image" tabindex="3"><img src="https://GarbageBlog.github.io/post-images/1600508336501.png" alt="" loading="lazy"></figure>
+<p>打开之后，发现系统其实可以读到我的U盘！！！</p>
+<figure data-type="image" tabindex="4"><img src="https://GarbageBlog.github.io/post-images/1600508386932.png" alt="" loading="lazy"></figure>
+<p>果断选择U盘，删除分区，格式化！</p>
+<h1 id="五-恢复如初后的总结">五、恢复如初后的总结</h1>
+<p>U盘正常了。</p>
+<figure data-type="image" tabindex="5"><img src="https://GarbageBlog.github.io/post-images/1600508469074.png" alt="" loading="lazy"></figure>
+<p>想想，于是不要太慌张，总有解决办法的。</p>
+<p>于是，有了这篇文章。</p>
 
               </div>
               <div class="post-footer">
@@ -537,7 +547,7 @@ window.addEventListener('load', function() {
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://GarbageBlog.github.io/Ubuntu-Dowload/" title="Ubuntu镜像源下载">Ubuntu镜像源下载</a>
+      <a href="https://GarbageBlog.github.io/2BQ-RZWj2/" title="Ubuntu18.04 格式化U盘的正确方法">Ubuntu18.04 格式化U盘的正确方法</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -546,23 +556,19 @@ window.addEventListener('load', function() {
   </ul>
   <div class="tags">
     
-      <a href="https://GarbageBlog.github.io/d2UcfGXHz/"># 系统</a>
+      <a href="https://GarbageBlog.github.io/SuGATntA4/"># 笔记</a>
     
-      <a href="https://GarbageBlog.github.io/Io05BbkLP7/"># Ubuntu</a>
+      <a href="https://GarbageBlog.github.io/ZCI7T538SV/"># 总结</a>
     
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="Gridea 安装utterances评论系统" href="https://GarbageBlog.github.io/utterances-help/">Gridea 安装utterances评论系统</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="Gridea 安装utterances评论系统" href="https://GarbageBlog.github.io/utterances-help/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="P5823 【L&amp;K R-03】课表的排列 题解" href="https://GarbageBlog.github.io/lgP5823/">P5823 【L&amp;K R-03】课表的排列 题解</a>
-        <a class="nav-mobile-next" title="P5823 【L&amp;K R-03】课表的排列 题解" href="https://GarbageBlog.github.io/lgP5823/">下一篇</a>
+        <a class="nav-pc-next" title="Gridea 安装utterances评论系统" href="https://GarbageBlog.github.io/utterances-help/">Gridea 安装utterances评论系统</a>
+        <a class="nav-mobile-next" title="Gridea 安装utterances评论系统" href="https://GarbageBlog.github.io/utterances-help/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>

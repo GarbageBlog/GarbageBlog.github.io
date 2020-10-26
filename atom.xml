@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://GarbageBlog.github.io</id>
-    <title>Garbage的小窝</title>
-    <updated>2020-10-26T06:12:14.763Z</updated>
+    <title>Garbage的方块小窝</title>
+    <updated>2020-10-26T07:43:40.779Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://GarbageBlog.github.io"/>
     <link rel="self" href="https://GarbageBlog.github.io/atom.xml"/>
     <subtitle>Garbage的一个&lt;del&gt;划水&lt;/del&gt;小站，学术性内容不多，欢迎大家!</subtitle>
     <logo>https://GarbageBlog.github.io/images/avatar.png</logo>
     <icon>https://GarbageBlog.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Garbage的小窝</rights>
+    <rights>All rights reserved 2020, Garbage的方块小窝</rights>
     <entry>
         <title type="html"><![CDATA[Ubuntu18.04 格式化U盘的正确方法]]></title>
         <id>https://GarbageBlog.github.io/2BQ-RZWj2/</id>

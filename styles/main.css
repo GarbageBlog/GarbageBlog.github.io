@@ -1961,11 +1961,11 @@ body {
       background: #f9f9f9;
       color: rgba(0, 0, 0, 0.98);
     }.markdownIt-TOC a {
-      color: #66ccff;
-      border-bottom-color: #66ccff;
+      color: #eee;
+      border-bottom-color: #eee;
     }.markdownIt-TOC a:hover {
-      color: #e64980;
-      border-bottom-color: #e64980;
+      color: #fff;
+      border-bottom-color: #fff;
     }.active-current > a {
       color: #fc6423 !important;
       border-bottom-color: #fc6423 !important;
@@ -1999,6 +1999,4 @@ body {
     }
     .mist .site-title i {
       background: #FFF;
-    }.box-scale > #landlord {
-      transform: scale(1);
     }
